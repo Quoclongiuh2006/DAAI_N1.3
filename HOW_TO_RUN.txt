@@ -1,0 +1,47 @@
+=====================================================
+  HƯỚNG DẪN CHẠY PIPELINE ETL - DAAI_N1.3
+=====================================================
+
+📋 YÊU CẦU:
+-----------
+1. Python đã cài đặt (Python 3.7+)
+2. Cài thư viện pandas:
+   
+   pip install pandas
+
+
+🚀 CÁCH CHẠY:
+-------------
+Mở Terminal/PowerShell tại thư mục DAAI_N1.3, chạy lần lượt:
+
+1. Xử lý Products (chạy đầu tiên):
+   python src/process_products.py
+
+2. Xử lý Inventory (chạy sau Products):
+   python src/process_inventory.py
+
+3. Xử lý Promotions:
+   python src/process_promotions.py
+
+
+📂 KẾT QUẢ:
+------------
+Sau khi chạy, 3 file sẽ được tạo trong thư mục data_silver/:
+- product.csv      (2,412 dòng, 10 cột)
+- inventory.csv    (60,247 dòng, 17 cột)
+- promotions.csv   (50 dòng, 11 cột)
+
+
+📖 TÀI LIỆU:
+-------------
+Xem chi tiết tại: src/README_ETL.md
+
+
+💡 LƯU Ý:
+---------
+- Phải chạy process_products.py TRƯỚC process_inventory.py
+- Pipeline sẽ tự động kiểm tra chất lượng dữ liệu
+- Nếu gặp lỗi, đọc message để biết nguyên nhân
+
+
+=====================================================

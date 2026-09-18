@@ -6,4 +6,4 @@ Danh sách thành viên:
 24701081 Trần Quốc Long
 24726501 Nguyễn Trọng Hiếu
 24683221 Lê Gia Bảo
-24668051 Nguyễn Ngọc Thùy Dương 
+24668051 Nguyễn Ngọc Thùy Dương
